@@ -1,18 +1,21 @@
-
+import {Routes, Route} from "react-router-dom"
+import {Footer, Navbar} from "./components";
+import {Activities, ContactUs, Home, Members} from "./pages";
 
 function App() {
 
-
   return (
     <>
-      <div className=" w-full">
-        <h1>bcwebpage with React</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti qui corporis quaerat distinctio dolores. Impedit beatae iure, reprehenderit voluptates odio ratione iusto eaque harum consequuntur aperiam quos quod odit vitae.
-        </p>
-      </div>
+    <Navbar/>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path= "/members" element={<Members/>}/>
+      <Route path="/activities" element={<Activities/>}/>
+      <Route path="/contact-us" element={<ContactUs/>}/>
+    </Routes>
+    <Footer/>
     </>
   )
 }
 
-export default App
+export default App;
