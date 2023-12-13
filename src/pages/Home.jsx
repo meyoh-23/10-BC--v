@@ -1,4 +1,4 @@
-import membersImage from "./../assets/boys.jpg"
+/* import membersImage from "./../assets/boys.jpg" */
 import { leaders, values } from "../assets/constants";
 import LeaderCard from "../components/LeaderCard";
 import CoreValuesCard from "../components/CoreValuesCard";
