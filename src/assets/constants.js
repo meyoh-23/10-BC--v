@@ -1,25 +1,31 @@
-import Albert from "./../assets/Albert portrait.jpg";
-import Calvin from "./../assets/calvin portrait.jpg";
-import Kuria from "./../assets/felix portrait.jpg";
+import fun from "../assets/fun-illustration.jpg"
+import empathy from "../assets/empathy-illustration.jpg";
+import ronnie from "../assets/bwire.jpg";
+import growth from "../assets/growth-illustration.jpg";
+import resilience from "../assets/resilience-illlustration.jpg";
+import team from "../assets/team-work.jpg";
+import friendship from "../assets/friendship-illustration.jpg";
+import social from "../assets/social -illustration.jpg";
+import adventure from "../assets/adventure illustration.jpg";
 
 export const leaders = [
     {
         id: 1,
         name: "Shibiriti Calvin",
         role: "Chairman",
-        image: Calvin
+        image: ronnie
     },
     {
         id: 2,
         name: "Isaac Kuria",
         role: "Secretary",
-        image: Kuria
+        image: ronnie
     },
     {
         id: 13,
         name: "Albert Mwenga",
         role: "Treasurer",
-        image: Albert
+        image: ronnie
     },
 ]
 
@@ -60,5 +66,79 @@ export const navItems = [
     {
         title: "Contact Us",
         path: "/contact-us"
+    },
+]
+
+export const  members = [
+    {
+        name: "dancan morara",
+        Profession: "senior counsel",
+        image: ronnie,
+        comments: "A modern gym is typically equipped with a range of state-of-the-art fitness equipment catering to various workout needs. It houses.",
+        id: 1,
+    },
+    {
+        name: "Felx Meyoh",
+        Profession: "Mechatronic Eng",
+        image: ronnie,
+        comments: "A modern gym is typically equipped with a range of state-of-the-art fitness equipment catering to various workout needs.",
+        id: 13,
+    },
+    {
+        name: "Felx Meyoh",
+        Profession: "Mechatronic Eng",
+        image: ronnie,
+        comments: "A modern gym is typically equipped with a range of state-of-the-art fitness equipment catering to and suspension trainers, promoting dynamic exercises and core strength development.",
+        id: 17,
+    },
+    {
+        name: "Felx Meyoh",
+        Profession: "Mechatronic Eng",
+        image: ronnie,
+        comments: "A modern gym is typically equipped with a range of state-of-the-art fitness equipment catering to various workout needs, gyms often offer promoting dynamic exercises and core strength development.",
+        id: 11,
+    },
+];
+
+export const ourValues = [
+    {
+        value: "Fun",
+        illustration: fun,
+        description: "molestiae  Obcaecati consequuntur "
+    },
+    {
+        value: "Growth",
+        illustration: growth,
+        description: "molestiae  Obcaecati consequuntur "
+    },
+    {
+        value: "Resilience",
+        illustration: resilience,
+        description: "molestiae  Obcaecati consequuntur "
+    },
+    {
+        value: "Empathy",
+        illustration: empathy,
+        description: "molestiae  Obcaecati consequuntur "
+    },
+    {
+        value: "Teamwork",
+        illustration: team,
+        description: "molestiae  Obcaecati consequuntur "
+    },
+    {
+        value: "Friendship",
+        illustration: friendship,
+        description: "molestiae  Obcaecati consequuntur "
+    },
+    {
+        value: "Social",
+        illustration: social,
+        description: "molestiae  Obcaecati consequuntur "
+    },
+    {
+        value: "Adventure",
+        illustration: adventure,
+        description: "molestiae  Obcaecati consequuntur "
     },
 ]
