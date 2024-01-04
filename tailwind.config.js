@@ -10,8 +10,15 @@ export const theme = {
       dimBlue: "rgba(9, 151, 124, 0.1)",
     },
     fontFamily: {
-      poppins: ["Poppins", "sans-serif"],
+      kalnia: ["'Kalnia',serif"],
+      oOswald: ["'Oswald',sans-serif"],
+      novaSquare: ["'Nova Square',sans-serif"],
+      Rajdhani :["'Rajdhani',sans-serif"]
     },
+    backgroundImage: {
+        'hero-pattern': "url('./assets/hero-image.jpg')",
+        'boys-hero': "url('./assets/boys-hero.jpg')",
+      }
   },
   screens: {
     xs: "480px",
