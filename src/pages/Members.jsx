@@ -1,5 +1,5 @@
 import { members } from "../assets/constants";
-import MembersCard from "../components/MembersCard";
+import { MemberCard } from "../components";
 
 const Members = () => {
   return (
@@ -9,7 +9,7 @@ const Members = () => {
           <div className="flex flex-wrap items-start justify-start gap-8">
             {
               members.map((member) => ( 
-                <MembersCard
+                <MemberCard
                 key={member.id}
                 image={member.image}
                 name={member.name}

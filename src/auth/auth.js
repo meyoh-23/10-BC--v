@@ -1,23 +1,16 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { getAuth, GoogleAuthProvider } from "firebase/auth"
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCOdF5m_HC9jr1d6DTJbWAtf3Qz-oh3_E4",
-  authDomain: "boys-club-v1.firebaseapp.com",
-  projectId: "boys-club-v1",
-  storageBucket: "boys-club-v1.appspot.com",
-  messagingSenderId: "517430506806",
-  appId: "1:517430506806:web:62bc8d1ab34a30e6116f97",
-  measurementId: "G-C6EMJF1ECG"
+  apiKey: "AIzaSyBM8krobQhbfdGBrkuHIcq7DlAzQydikKI",
+  authDomain: "the-10-boys-club.firebaseapp.com",
+  projectId: "the-10-boys-club",
+  storageBucket: "the-10-boys-club.appspot.com",
+  messagingSenderId: "1550792474",
+  appId: "1:1550792474:web:6b963936a0a14232a81ea3",
+  measurementId: "G-05J3WKYRMV"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
-// npm install firebase// for installing firebase into my app kesho incase it fails to work.
+export const auth = getAuth(app);
+export const googleProvider = new GoogleAuthProvider()

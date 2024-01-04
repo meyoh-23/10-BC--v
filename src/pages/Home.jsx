@@ -1,8 +1,6 @@
 /* import membersImage from "./../assets/boys.jpg" */
 import {  values, leaders } from "../assets/constants";
-import {  Hero, CoreValuesCard, LeaderCard } from "../components";
-import ValueSlider from "../components/ValueSlider";
-
+import {  Hero, CoreValuesCard, LeaderCard, ValueSlider } from "../components";
 
 const Home = () => {
 
