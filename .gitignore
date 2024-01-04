@@ -25,6 +25,6 @@ dist-ssr
 
 // infor not used for now
 src/app
-src/auth
+src/auth/auth.js
 src/features
 src/pages/MemberLogin.jsx

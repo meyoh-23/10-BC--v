@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="w-full mb-9 fixed top-0  z-30 bg-orange-300 py-6">
       <div className="flex justify-between w-5/6 mx-auto">
-        <h1>Boys club</h1>
+        <h1>BC</h1>
         <ul className="hidden md:flex justify-between items-end gap-4">
           {
           navItems.map((item)=> ( 
@@ -38,7 +38,7 @@ const Navbar = () => {
           <nav className="flex flex-col fixed top-0 right-0 h-full md:hidden w-[75%] z-40 py-9 bg-green-300">
             <div className="flex flex-col mx-3 justify-between">
               <div className="flex justify-between items-end">
-                <h1>BC <br /> <span>Family</span></h1>
+                <h6>BC <br /> <span>Family</span></h6>
                 <button className="rounded-xl p-2" type="manu" onClick={() => setMobieNav(false)}>
                   <XMarkIcon className="w-8 h-8 text-white"/>
                 </button>

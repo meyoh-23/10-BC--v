@@ -1,10 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@700&family=Nova+Square&family=Oswald:wght@300;600&family=Rajdhani:wght@500&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html, body, .app {
   box-sizing: border-box;
-  overflow: hidden;
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  font-family: 'Kalnia', serif;
+  font-size: 2.25rem;
+}
+
+p {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 'Oswald', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
 }

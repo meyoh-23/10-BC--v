@@ -1,22 +1,22 @@
 /* eslint-disable react/prop-types */
 
-const MembersCard = ({name, role, comments, image} ) => {
-  return (
-    <article className=" mx-auto flex  flex-col items-center justify-between max-w-[300px]">
-        <div className=" flex flex-col justify-between gap-8 items-center">
-            <img src={image} alt={name}  className=" w-[100px] h-[100px] rounded-full"/>
-            <div className="flex flex-col">
-                <h2>{name}</h2>
-                <h3>{role}</h3>
+const MembersCard = ({name, role, image} ) => {
+    const names = (name.split(' '));
+    const firstName = names[0]
+    return (
+    <article className=" mx-auto flex  flex-col items-center justify-between max-w-[450px] gap-3 border-solid border-4 border-sky-950 my-4 rounded-br-2xl">
+        <div className="flex flex-col  items-center gap-4 md:flex-row">
+            <img src={image} alt="member- image" className="max-w-[200px] border-solid border-2 border-red-400 mt-2 mx-2 rounded-md"/>
+            <div className="flex flex-col gap-4 items-center p-2 justify-start border-solid border-4 border-sky-950 my-4 rounded-br-2xl shadow-lg bg-indigo-400 shadow-indigo-400/50 mr-2">
+                <p>{name}</p>
+                <p>{role}</p>
             </div>
         </div>
-        <div className=" text-left">
-            <p>
-                {comments}
-            </p>
-        </div>
+        <button type="button" className="bg-primary rounded-md text-white p-2 my-2">
+            more on {firstName}
+        </button>
     </article>
-  )
+    )
 }
 
 export default MembersCard;
