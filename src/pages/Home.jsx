@@ -24,7 +24,6 @@ const Home = () => {
                     values.map((item) => ( 
                         <CoreValuesCard
                         key={item.id}
-                        icon={item.icon}
                         description={item.description}
                         value={item.value}
                         />
@@ -32,7 +31,8 @@ const Home = () => {
                 }
             </div>
         </div>
-        <div className="items-center mt-6 w-5/6 mx-auto">
+        <div className="items-center mt-6 w-5/6 mx-auto ">
+            <h2 className="text-center my-4 text-3xl font-extrbold">Being Part of the Boys Entails..</h2>
             <ValueSlider/>
         </div>
     </section>
