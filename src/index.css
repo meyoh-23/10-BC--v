@@ -12,17 +12,13 @@ html, body, .app {
 }
 
 h1 {
-  font-family: 'Kalnia', serif;
-  font-size: 2.25rem;
+  font-size: 1.5rem;
 }
 
 p {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 1.75rem;
+  font-size: 1rem;
 }
 
-h4 {
-  font-size: 'Oswald', sans-serif;
-  font-size: 2.5rem;
-  font-weight: 700;
+.dark__overlay {
+  background: rgba(0, 0, 0, 0.5);
 }

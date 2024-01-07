@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <section className="w-full">
         <Hero/>
-        <div className="flex flex-col items-center gap-6 py-7">
+        <div className="flex flex-col items-center gap-6 py-7 mt-8">
             <h1>Leaders</h1>
             <div className="flex flex-wrap justify-center items-center">
                 {

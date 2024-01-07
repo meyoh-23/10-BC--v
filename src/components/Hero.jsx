@@ -1,32 +1,37 @@
-
+import { useState } from "react";
+import Boys from "../assets/boys-hero.jpg"
 
 const Hero = () => {
+  const [info, showInfo] = useState(false);
   return (
-    <section className="w-full h-screen bg-hero-pattern flex flex-col items-center gap-4 my-auto">
-      <div className=" flex justify-between w-5/6 mx-auto items-start pt-20 md:pt-[80px]">
-        <div className="text-white flex flex-col justify-between items-start">
-          <h1 className="mt-9"><span className="text-green-200 ">The</span> <br /> 10 Boys Club</h1>
-          <p className="">
-            Magna Fratanita
+    <section className="hidden overflow-hidden sm:flex flex-col items-center gap-4 mt-16 relative py-20">
+      <div className="absolute top-[-20px] py-4left-0 w-[100%] h-[100%] z-10 dark__overlay py-10"/>
+      <h1 className="text-center">The 10 Boys Club</h1>
+      <div className=" flex justify-between w-[95%] mx-auto items-center ">
+        <div className="flex flex-col items-start w-1/2 gap-4">
+          <h1 className="text-start">Welcome <br /> to The 10 Boys Club! </h1>
+          <p className="max-w-[400px]">
+            We are a collective of ten dynamic young men dedicated to making a positive impact on our community
           </p>
-          <p className="max-w-lg">
-            The 10 Boys Club comprises ten spirited young men united by a profound friendship.
+          <p className="max-w-[400px]">
+            Our mission goes beyond mere camaraderie; we strive to foster meaningful friendships, pool resources, and make impactful investments.
           </p>
+          <button className="bg-primary text-white p-2 text-center rounded-md z-20" onClick={() =>showInfo(!info)}>
+            { info ?"show less" : "read more"}
+          </button>
         </div>
-        <div className="text-white w-[500px] h-[300px] mt-10 bg-boys-hero rounded-lg shadow-indigo-500/50 shadow-xl hidden md:flex">
-          <p className="my-8 text-center mx-auto max-w-sm">
-            United Hearts, Empowered Hands: Investing in Friendship, Enriching Communities
-          </p>
+        <div className="overflow-hidden w-1/2">
+          <img src={Boys} alt="" className="min-w-[400px] h-auto rounded-md"/>
         </div>
       </div>
-      <div className="mx-auto my-8">
-        <button className="text-white">learn more</button>
+      <div className="hidden">
+        Mobile Hero
       </div>
-      <div className="hidden md:flex my-4 mx-auto">
-        <p className="text-white text-center max-w-sm">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium assumenda pariatur .
-        </p>
-      </div>
+      {
+        info && <article className="max-w-[450px] text-center z-20 border-4 bg-white border-red-300 rounded-lg p-6 absolute top-20 mx-auto">
+          As Boys Club,our primary focus remains on cultivating a safe and supportive environment where each member can freely express themselves. Join us as we unite to create lasting change and forge a space where every voice is valued.
+        </article>
+      }
     </section>
   )
 }
