@@ -3,7 +3,7 @@ import { navItems } from "../assets/constants";
 import {Bars3BottomRightIcon, XMarkIcon} from '@heroicons/react/24/solid';
 import { useState } from "react";
 const Navbar = () => {
-  const linkStyle = `text-[1rem] text-sky-400`;
+  const linkStyle = `text-[1rem] text-p font-bold font-raleway hover:text:white`;
   const [mobileNav, setMobieNav] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -11,7 +11,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="w-full mb-9 fixed top-0  z-30 bg-heroColor py-6">
+    <nav className="w-full mb-9 fixed top-0  z-30 bg-heroColor py-6 ">
       <div className="flex justify-between w-5/6 mx-auto">
         <h1 className="font-bold text-h1 text-secondary font-raleway">BC</h1>
         <ul className="hidden md:flex justify-between items-end gap-4">
@@ -25,7 +25,7 @@ const Navbar = () => {
         </ul>
         <div className="hidden md:flex">
           {/* work on thebutton later */}
-          <button className="rounded-lg border-4 p-2">
+          <button className="rounded-lg border-none px-3 z-10 shadow-lg bg-bgButton hover:bg-bgButtonSecondary">
             <Link className={`${linkStyle}`} replace="true" to="/contact-us">Reach Us</Link>
           </button>
         </div>

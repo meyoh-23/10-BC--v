@@ -8,12 +8,12 @@ const MembersCard = ({name, role, image, comments} ) => {
 
     const firstName = names[0]
     return (
-    <article className=" mx-auto flex  flex-col items-center justify-between max-w-[450px] gap-3 border-solid border-4 border-sky-950 my-4 rounded-br-2xl relative">
+    <article className=" mx-auto flex  flex-col items-center justify-between max-w-[450px] gap-3 border-none shadow-2xl my-4 rounded-br-2xl relative">
         <div className="flex flex-col  items-center gap-4 md:flex-row">
-            <img src={image} alt="member- image" className="max-w-[200px] border-solid border-2 border-red-400 mt-2 mx-2 rounded-md"/>
-            <div className="flex flex-col gap-4 items-center p-2 justify-start border-solid border-4 border-sky-950 my-4 rounded-br-2xl shadow-lg bg-indigo-400 shadow-indigo-400/50 mr-2">
-                <p>{name}</p>
-                <p>{role}</p>
+            <img src={image} alt="member- image" className="max-w-[200px] mt-2 mx-2 rounded-md z-[5] drop-shadow-xl shadow-lg" />
+            <div className="flex flex-col gap-4 items-center p-2 justify-start my-4 rounded-br-2xl shadow-2xl shadow-indigo-400/50 mr-2">
+                <p className="text-h2 font-raleway font-bold text-primary text-center">{name}</p>
+                <p className="text-h3 font-Oswald text-bgButtonSecondary text-center font-medium">{role}</p>
             </div>
         </div>
         {showInfo && 
@@ -27,7 +27,7 @@ const MembersCard = ({name, role, image, comments} ) => {
                 </button>
             </div>
         </div>}
-        <button type="button" className="bg-primary rounded-md text-white p-2 my-2" onClick={() =>setShowInfo(!showInfo)}>
+        <button type="button" className="bg-bgButton rounded-md p-2 my-2 text-primary text-little font-raleway font-bold" onClick={() =>setShowInfo(!showInfo)}>
             more on {firstName}
         </button>
     </article>

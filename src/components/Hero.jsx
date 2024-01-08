@@ -4,10 +4,10 @@ import Boys from "../assets/boys-hero.jpg"
 const Hero = () => {
   const [info, showInfo] = useState(false);
   return (
-    <section className="hidden overflow-hidden sm:flex flex-col items-center gap-4 mt-16 relative py-20">
+    <section className="overflow-hidden  flex-col items-center gap-4 mt-16 relative py-20">
       <h1 className="text-center text-h2 font-raleway font-bold">The 10 Boys Club</h1>
       <div className=" flex justify-between w-[95%] mx-auto items-center ">
-        <div className="flex flex-col items-start w-1/2 gap-4">
+        <div className="flex flex-col items-start w-[90%] sm:w-1/2 gap-4">
           <h1 className="text-start font-Oswald font-medium text-h2 text-bgButtonSecondary">Welcome <br /> to The 10 Boys Club! </h1>
           <p className="max-w-[400px] text-secondary font-extralight font-Oswald">
             We are a collective of ten dynamic young men dedicated to making a positive impact on our community
@@ -19,7 +19,7 @@ const Hero = () => {
             { info ?"show less" : "read more"}
           </button>
         </div>
-        <div className="overflow-hidden w-1/2">
+        <div className="overflow-hidden w-1/2 hidden sm:flex">
           <img src={Boys} alt="" className="min-w-[400px] h-auto rounded-md"/>
         </div>
       </div>
