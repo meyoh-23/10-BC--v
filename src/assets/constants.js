@@ -70,6 +70,10 @@ export const navItems = [
         title: "Contact Us",
         path: "/contact-us"
     },
+    {
+        title: "Colors",
+        path: "/test-colors"
+    },
 ]
 
 export const  members = [

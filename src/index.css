@@ -22,3 +22,8 @@ p {
 .dark__overlay {
   background: rgba(0, 0, 0, 0.5);
 }
+.trial {
+  background: #F5F5DC;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}

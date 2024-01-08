@@ -5,18 +5,17 @@ const Hero = () => {
   const [info, showInfo] = useState(false);
   return (
     <section className="hidden overflow-hidden sm:flex flex-col items-center gap-4 mt-16 relative py-20">
-      <div className="absolute top-[-20px] py-4left-0 w-[100%] h-[100%] z-10 dark__overlay py-10"/>
-      <h1 className="text-center">The 10 Boys Club</h1>
+      <h1 className="text-center text-h2 font-raleway font-bold">The 10 Boys Club</h1>
       <div className=" flex justify-between w-[95%] mx-auto items-center ">
         <div className="flex flex-col items-start w-1/2 gap-4">
-          <h1 className="text-start">Welcome <br /> to The 10 Boys Club! </h1>
-          <p className="max-w-[400px]">
+          <h1 className="text-start font-Oswald font-medium text-h2 text-bgButtonSecondary">Welcome <br /> to The 10 Boys Club! </h1>
+          <p className="max-w-[400px] text-secondary font-extralight font-Oswald">
             We are a collective of ten dynamic young men dedicated to making a positive impact on our community
           </p>
-          <p className="max-w-[400px]">
+          <p className="max-w-[400px] text-secondary font-extralight font-Oswald">
             Our mission goes beyond mere camaraderie; we strive to foster meaningful friendships, pool resources, and make impactful investments.
           </p>
-          <button className="bg-primary text-white p-2 text-center rounded-md z-20" onClick={() =>showInfo(!info)}>
+          <button className="bg-bgButtonSecondary hover:bg-primary font-raleway font-bold text-white p-2 text-center rounded-md z-20" onClick={() =>showInfo(!info)}>
             { info ?"show less" : "read more"}
           </button>
         </div>

@@ -11,14 +11,14 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="w-full mb-9 fixed top-0  z-30 bg-orange-300 py-6">
+    <nav className="w-full mb-9 fixed top-0  z-30 bg-heroColor py-6">
       <div className="flex justify-between w-5/6 mx-auto">
-        <h1>BC</h1>
+        <h1 className="font-bold text-h1 text-secondary font-raleway">BC</h1>
         <ul className="hidden md:flex justify-between items-end gap-4">
           {
           navItems.map((item)=> ( 
             <li key={item.title}>
-              <Link to={item.path}>{item.title}</Link>
+              <Link to={item.path} className="text-secondary hover:text-bgButtonSecondary text-p hover:text-h4 font-Oswald">{item.title}</Link>
             </li>
           ))
           }
