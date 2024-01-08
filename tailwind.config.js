@@ -3,17 +3,26 @@ export const content = ["./index.html", "./src/**/*.{js,jsx}"];
 export const mode = "jit";
 export const theme = {
   extend: {
+    fontSize: {
+        'h1': '3rem',
+        'h2': '2.25rem',
+        'h3': '1.1875rem',
+        'h4': '1.5rem',
+        'p': '1rem',
+        'little': '0.8rem',
+      },
     colors: {
-      primary: "#00040f",
-      secondary: "#00f6ff",
-      dimWhite: "rgba(255, 255, 255, 0.7)",
+      primary: "#5e0000",
+      secondary: "#1e1c1f",
+      textNormal: "#ff746e",
       dimBlue: "rgba(9, 151, 124, 0.1)",
+      bgButton: "#ffbf3c",
+      bgButtonSecondary: "#ff6b66",
+      heroColor: "#F5F5DC",
     },
     fontFamily: {
-      kalnia: ["'Kalnia',serif"],
-      oOswald: ["'Oswald',sans-serif"],
-      novaSquare: ["'Nova Square',sans-serif"],
-      Rajdhani :["'Rajdhani',sans-serif"]
+      raleway: ["'Raleway', sans-serif;"],
+      Oswald: ["'Oswald', sans-serif"]
     },
     backgroundImage: {
         'hero-pattern': "url('./assets/hero-image.jpg')",
