@@ -7,7 +7,9 @@ import team from "../assets/team-work.jpg";
 import friendship from "../assets/friendship-illustration.jpg";
 import social from "../assets/social -illustration.jpg";
 import adventure from "../assets/adventure illustration.jpg";
-// import {Cog6ToothIcon, ArrowTrendingUpIcon, HandThumbUpIcon} from "@heroicons/react/24/solid"; 
+import kanjataCamping from "../assets/kianjata-Camping.jpg";
+import SomaSometo from "../assets/Soma-Someto.jpg";
+
 
 export const leaders = [
     {
@@ -191,3 +193,36 @@ export const ourValues = [
         description: "molestiae  Obcaecati consequuntur "
     },
 ]
+
+export const activities = [
+    {
+        title: "Camping at KIanjata",
+        image: kanjataCamping,
+        descritpion: "The primary focus of the camping event was to foster bonding and strengthen the camaraderie among the club members. It served as a platform for team-building activities that aimed to deepen the connections between the boys while providing a space for reflection and review of their first year together.  the attendees engaged in various team-building exercises, games, and discussions that allowed them to reflect on their accomplishments, challenges, and growth as a collective over the past year. They shared experiences, exchanged ideas, and strategized for the future, creating an atmosphere of unity and support.",
+        date: "date"
+    },
+    {
+        title: "SomaSometo Ride",
+        image: SomaSometo,
+        descritpion: " This journey was not just about cycling; it symbolized a collective effort towards making a difference in the lives of deserving students striving for education. The mission was to raise vital funds to support financially challenged students from Dedan Kimathi University in Nyeri Town, Kenya, in meeting their academic fees. The bike ride embarked from the serene grounds of Dedan Kimathi University, traversing through scenic routes to Menu town and back, covering an impressive estimated distance of 300km. Every pedal stroke during this charitable endeavor was a testament to the unwavering commitment to education and the betterment of these students' futures. It showcased the power of unity and compassion as participants, supporters, and donors came together, propelled by the shared belief in the transformative impact of education.",
+        date: "date"
+    },
+    {
+        title: "Hiking at Ngong' Hills",
+        image: "adding",
+        descritpion: "l",
+        date: "date"
+    },
+    {
+        title: "Blood Dvire At Mathari Hospital",
+        image: "adding",
+        descritpion: "l",
+        date: "date"
+    },
+    {
+        title: "Charity Activity At Upendo Home for the Elderly",
+        image: "adding",
+        descritpion: "l",
+        date: "date"
+    },
+];
