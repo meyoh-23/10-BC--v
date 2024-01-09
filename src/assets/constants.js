@@ -9,7 +9,7 @@ import omu from "../assets/omu.jpg";
 import stedy from "../assets/rolland.jpg";
 import Shibiriti from "../assets/shibi.jpg";
 import Mwenga from "../assets/alberto.jpg";
-import Mukaka from "../assets/ben-mukaka.jpg";
+import Mukaka from "../assets/benna.jpg";
 import felloh from "../assets/felloh.jpg";
 
 import growth from "../assets/growth-illustration.jpg";
