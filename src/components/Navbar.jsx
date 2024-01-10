@@ -30,23 +30,23 @@ const Navbar = () => {
           </button>
         </div>
         <button type="menu" className="flex md:hidden " onClick={toggleMobileMenu}>
-          <Bars3BottomRightIcon className="w-8 h-8 text-white"/>
+          <Bars3BottomRightIcon className="w-8 h-8 text-black"/>
         </button>
       </div>
       {
         mobileNav && ( 
-          <nav className="flex flex-col fixed top-0 right-0 h-full md:hidden w-[75%] z-40 py-9 bg-green-300">
-            <div className="flex flex-col mx-3 justify-between">
-              <div className="flex justify-between items-end">
-                <h6>BC <br /> <span>Family</span></h6>
-                <button className="rounded-xl p-2" type="manu" onClick={() => setMobieNav(false)}>
-                  <XMarkIcon className="w-8 h-8 text-white"/>
+          <nav className="flex flex-col fixed top-0 right-0 h-full md:hidden w-[85%] z-40 py-9  bg-heroColor rounded-l-lg" onClick={()=> setMobieNav(false)}>
+            <div className="flex flex-col mx-3 gap-4">
+              <div className="flex justify-between items-center">
+                <h6 className="font-raleway font-bold text-h2 text-center text-primary">THE <br /> <span>BC</span></h6>
+                <button className="rounded-xl p-2 text-center bg-secondary" type="manu" onClick={() => setMobieNav(false)} >
+                  <XMarkIcon className="w-8 h-8 text-white text-bold "/>
                 </button>
               </div>
-              <ul className="flex flex-col text-right my-8 gap-3">
+              <ul className="flex flex-col items-center my-8 gap-3">
                 {
                   navItems.map((item)=> ( 
-                    <li key={item.title}>
+                    <li key={item.title} className="font-bold font-raleway text-bgButton text-p">
                       <Link to={item.path}>{item.title}</Link>
                     </li>
                   ))

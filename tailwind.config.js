@@ -19,6 +19,7 @@ export const theme = {
       bgButton: "#ffbf3c",
       bgButtonSecondary: "#ff6b66",
       heroColor: "#F5F5DC",
+      heroTransparent: "rgba (50, 50, 50, 0.5)",
     },
     fontFamily: {
       raleway: ["'Raleway', sans-serif;"],

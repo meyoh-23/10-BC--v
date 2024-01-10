@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import { useState } from "react";
+import { XMarkIcon } from '@heroicons/react/24/solid';
 
 const MembersCard = ({name, role, image, comments} ) => {
     const [showInfo, setShowInfo] = useState(false);
@@ -23,7 +24,7 @@ const MembersCard = ({name, role, image, comments} ) => {
                     {comments}
                 </p>
                 <button className="text-white p-3 bg-primary rounded-md" onClick={() => setShowInfo(!showInfo)}>
-                    close
+                    <XMarkIcon className="w-8 h-8 text-white text-bold "/>
                 </button>
             </div>
         </div>}
