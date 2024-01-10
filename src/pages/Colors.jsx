@@ -1,7 +1,7 @@
 
 const Colors = () => {
   return (
-    <div className="gid content-center mt-[10rem]">
+    <div className="gid content-center mt-[10rem] w-full h-[100vh]">
         <div className="flex flex-col items-center justify-center gap-4 mt-10">
             <button className="bg-primary p-3">
                 primary color
